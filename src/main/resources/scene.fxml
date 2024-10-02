@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="360.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Moduuli6.Moduuli6_4.Controller.NoteController">
+<BorderPane prefHeight="360.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Moduuli6.Moduuli6_4.Controller.NoteController">
     <center>
         <AnchorPane prefHeight="348.0" prefWidth="593.0">
             <children>
