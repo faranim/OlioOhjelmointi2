@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="360.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Moduuli6.Moduuli6_4.Controller.NoteController">
+    <center>
+        <AnchorPane prefHeight="348.0" prefWidth="593.0">
+            <children>
+                <SplitPane dividerPositions="0.5011428571428572" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="315.0" prefWidth="586.0">
+                    <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="313.0" prefWidth="327.0">
+                            <children>
+                                <Button fx:id="add" alignment="CENTER" layoutX="53.0" layoutY="216.0" mnemonicParsing="false" onAction="#addItem" prefHeight="25.0" prefWidth="223.0" text="ADD" />
+                                <Label layoutX="7.0" layoutY="14.0" text="Title" />
+                                <Label layoutX="8.0" layoutY="55.0" text="Content" />
+                                <TextArea fx:id="content" layoutX="53.0" layoutY="41.0" prefHeight="156.0" prefWidth="221.0" promptText="Enter content" />
+                                <TextField fx:id="title" layoutX="53.0" layoutY="10.0" prefHeight="25.0" prefWidth="221.0" promptText="Enter title" />
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="259.0" prefWidth="459.0">
+                            <children>
+                                <ScrollPane id="Items" hbarPolicy="NEVER" prefHeight="312.6666666666667" prefWidth="288.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <content>
+                                        <ListView fx:id="items" prefHeight="305.0" prefWidth="271.0" />
+                                    </content>
+                                </ScrollPane>
+                            </children>
+                        </AnchorPane>
+                    </items>
+                </SplitPane>
+            </children>
+        </AnchorPane>
+    </center>
+    <top>
+        <Label alignment="CENTER" prefHeight="30.0" prefWidth="171.0" text="Notebook" BorderPane.alignment="CENTER">
+            <font>
+                <Font name="Candara" size="19.0" />
+            </font>
+        </Label>
+    </top>
+</BorderPane>
