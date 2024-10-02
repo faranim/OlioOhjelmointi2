@@ -10,7 +10,7 @@ public class CurrencyDao {
 
     public Currency getCurrency(String code) {
         EntityManager em = MariaDbJpaConnection.getInstance();
-        Query query = em.createQuery("SELECT c FROM Currency c WHERE c.code = :code", Currency.class);
+        Query query = em.createQuery("SELECT c FROM Currency2 c WHERE c.code = :code", Currency.class);
         query.setParameter("code", code);
         Currency c = (Currency) query.getSingleResult();
         System.out.println(c.getName() + " " + c.getCode() + " " + c.getRate());
@@ -20,7 +20,7 @@ public class CurrencyDao {
 
     public ArrayList<String> getCurrencyCodes() {
         EntityManager em = MariaDbJpaConnection.getInstance();
-        Query query = em.createQuery("SELECT c.code FROM Currency c");
+        Query query = em.createQuery("SELECT c.code FROM Currency2 c");
         ArrayList<String> codes = (ArrayList<String>) query.getResultList();
         return codes;
     }
