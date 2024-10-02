@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="253.0" prefWidth="319.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Moduuli7.Moduuli7_2.Controller.CConversionController2">
+    <center>
+        <AnchorPane prefHeight="223.0" prefWidth="451.0">
+            <children>
+                <Button fx:id="convertButton" layoutX="73.0" layoutY="123.0" mnemonicParsing="false" onAction="#convertt" prefHeight="25.0" prefWidth="143.0" text="Convert" />
+                <TextField fx:id="fromText" layoutX="70.0" layoutY="45.0" promptText="Enter the amount" />
+                <TextField fx:id="toText" layoutX="70.0" layoutY="83.0" promptText="Result will be shown here" />
+                <Label layoutX="14.0" layoutY="49.0" text="From:" />
+                <Label layoutX="27.0" layoutY="87.0" text="To:" />
+                <ChoiceBox fx:id="fromBox" layoutX="235.0" layoutY="45.0" prefHeight="25.0" prefWidth="61.0" />
+                <ChoiceBox fx:id="toBox" layoutX="235.0" layoutY="83.0" prefHeight="25.0" prefWidth="61.0" />
+                <Label fx:id="errorText" layoutX="15.0" layoutY="171.0" textFill="#fd0000" />
+            </children>
+        </AnchorPane>
+    </center>
+    <top>
+        <Label alignment="CENTER" prefHeight="30.0" prefWidth="171.0" text="CurrecyC 2.0" BorderPane.alignment="CENTER">
+            <font>
+                <Font name="Candara" size="19.0" />
+            </font>
+        </Label>
+    </top>
+</BorderPane>
